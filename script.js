@@ -2,6 +2,7 @@ let btn1v = false, btn2v = false, btn3v = false, btn4v = false
 let bodyd = document.body
 const centro = document.getElementById('center')
 const image = document.getElementById('image')
+const texto = document.getElementById('texto')
 document.getElementById('btn1').addEventListener('click', () => {name(1)})
 document.getElementById('btn2').addEventListener('click', () => {name(2)})
 document.getElementById('btn3').addEventListener('click', () => {name(3)})
@@ -26,10 +27,11 @@ function name(key) {
             break;
     }
     if (btn1v && btn2v && btn3v && btn4v) {
-        document.getElementById('texto').style.visibility = 'hidden'
+        texto.style.visibility = 'hidden'
         centro.style.visibility = 'hidden'
         image.style.visibility = 'visible'
         console.log("")
     }
 
 }
+
