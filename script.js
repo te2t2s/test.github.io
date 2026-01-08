@@ -26,8 +26,10 @@ function name(key) {
             break;
     }
     if (btn1v && btn2v && btn3v && btn4v) {
+        document.getElementById('texto').style.visibility = 'hidden'
         centro.style.visibility = 'hidden'
         image.style.visibility = 'visible'
         console.log("")
     }
+
 }
